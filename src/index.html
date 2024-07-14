@@ -5,10 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href="./output.css" rel="stylesheet" />
 	</head>
-	<body>
+	<body class="container mx-auto">
 		<header>
 			<nav>
-				<nav class="bg-white shadow-lg">
+				<nav class="bg-white shadow-lg relative">
 					<div class="max-w-7xl mx-auto px-4">
 						<div class="flex justify-between items-center">
 							<div class="flex space-x-4">
@@ -21,7 +21,7 @@
 							</div>
 							<!-- Primary Nav -->
 							<div
-								class="hidden md:flex border-2 font-semibold items-center space-x-1"
+								class="hidden md:flex font-semibold items-center space-x-1"
 							>
 								<a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900"
 									>Destinations</a
@@ -74,7 +74,7 @@
 					</div>
 
 					<!-- Mobile Menu -->
-					<div class="mobile-menu hidden md:hidden">
+					<div class="mobile-menu hidden md:hidden absolute w-full right-0 bg-white">
 						<a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200"
 							>Destinations</a
 						>
@@ -88,7 +88,76 @@
 				</nav>
 			</nav>
 		</header>
-		<main></main>
+		<main class="container mx-auto">
+			<!-- Hero Section -->
+			<section class="bg-white py-12">
+				<div
+					class="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-center px-6"
+				>
+					<!-- Text Section -->
+					<div class="lg:w-1/2 max-w-lg">
+						<h2 class="text-sm text-orange-500 font-semibold">
+							BEST DESTINATIONS AROUND THE WORLD
+						</h2>
+						<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mt-2">
+							Travel, enjoy <br />
+							and live a new <br />
+							and full life
+						</h1>
+						<p class="text-gray-600 mt-4">
+							Built Wicket longer admire do barton vanity itself do in it. Preferred
+							to sportsmen it engrossed listening. Park gate sell they west hard for
+							the.
+						</p>
+						<div class="mt-8 flex items-center space-x-4">
+							<a
+								href="#"
+								class="bg-yellow-500 text-white py-3 px-6 rounded-lg shadow-md hover:bg-yellow-400"
+								>Find out more</a
+							>
+							<a
+								href="#"
+								class="flex items-center space-x-2 text-gray-600 hover:text-gray-900"
+							>
+								<span class="bg-red-500 text-white rounded-full p-2">
+									<svg
+										class="w-6 h-6"
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M14.752 11.168l-3.197-2.132c-.543-.363-1.28-.063-1.28.655v4.518c0 .718.738 1.018 1.28.655l3.197-2.132a.75.75 0 000-1.264z"
+										></path>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M21 12c0-4.97-4.03-9-9-9S3 7.03 3 12s4.03 9 9 9 9-4.03 9-9z"
+										></path>
+									</svg>
+								</span>
+								<span>Play Demo</span>
+							</a>
+						</div>
+					</div>
+					<!-- Image Section -->
+					<div class="mt-12 lg:mt-0 lg:w-1/2 lg:scale-125 flex justify-center">
+						<img
+							src="./public/hero.png"
+							alt="Travel Image"
+							class="w-full max-w-md lg:max-w-lg"
+						/>
+					</div>
+				</div>
+			</section>
+
+			
+		</main>
 		<footer></footer>
 		<script>
 			const btn = document.querySelector('button.mobile-menu-button');
